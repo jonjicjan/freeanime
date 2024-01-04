@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Anime world</title>
+  <style>
+    ::-webkit-scrollbar{
+        width:15px ; 
+        height:60px; 
+    }
+    
+    ::-webkit-scrollbar-track
+    {
+      background:#d1e5ff ;
+    
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(#642bff,#ff22e6);
+        border-radius: 15px;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Anm1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-x: hidden; /* Add this line to remove horizontal scrollbar */
+      color:white;
+    }
+
+    header {
+      background-color: black;
+      color: #fff;
+      padding: 5px 0px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      background-color: blue;
+      margin-top: 0px;
+      padding: 5px;
+      color: #000;
+    }
+
+    .nav-item {
+      list-style-type: none;
+      margin: 0 auto; /* Add some margin between items */
+    }
+
+    .nav-link {
+      text-decoration: none;
+      padding: 10px 30px;
+      display: block;
+      text-align: center;
+      transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      shape-margin: 10px;
+      border-radius: 5px;
+    }
+
+    .nav-link:hover {
+      background-color: yellow;
+    }
+
+    .search-result {
+      background-color:none;
+      padding: 5px 30px;
+      margin: 10px;
+      border-radius: 8px;
+     
+      
+    }
+
+    .search-result h3 {
+      color:white;
+    }
+
+    .search-result a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .search-result a:hover {
+      color:rgb(3, 3, 3);
+      text-decoration: underline;
+    }
+
+    .search-provider {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      color: #808080;
+    }
+
+    .search-provider img {
+      height: 30px;
+      width: 60px;
+      margin-right: 5px;
+    }
+    /* NARUTO HEADING */
+    .naruto {
+      margin: -10px;
+      text-align: center;
+      padding: 0px;
+      color:black;
+    }
+
+    @media only screen and (max-width: 600px) {
+        /* Styles for small screens */
+        .card {
+          width: 100%;
+        }
+      }
+      
+      @media only screen and (min-width: 601px) {
+        /* Styles for larger screens */
+        .card {
+          width: 50%;
+        }
+      }
+      
+      .card {
+        background-color:white;
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 25rem; 
+        margin: 25px 20px;
+        object-fit: cover;
+      }
+      .card-img-top{
+        width: 17rem;
+        height: 11rem;
+        object-fit: contain;
+      }
+      .btn{
+        text-align: center;
+        align-items:center ;
+        justify-content: center;
+      }
+      .card:hover {
+        background-color:black;
+        color: white;
+
+      }
+    
+      
+    footer {
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons li {
+      margin: 0 10px;
+    }
+
+    .fa {
+      width:50px;
+      height: 50px;
+    }
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-links a:hover{
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANIME WORLD</h1>
+  </header>
+  <ul class="nav-container" id="dynamicNav">
+    <!-- Navigation items will be dynamically added here -->
+  </ul>
+
+  <div class="search-result">
+    <div class="search-provider">
+      <img src="nf.png">
+    </div>
+    <h3>Anime | Netflix Official Site</h3>
+    <a href="https://www.netflix.com/browse/genre/7424" target="_blank">
+      <p>Explore anime on Netflix</p>
+    </a>
+   <p>Popular on NetflixExplore more · Naruto · The Seven Deadly Sins · Demon Slayer: Kimetsu no Yaiba · Kotaro Lives Alone · ONE PIECE · Hunter X Hunter (2011)  Action-packed adventures, offbeat comedies, inspirational stories -- these anime movies and TV shows have a style and spirit unlike anything else. 
+<br>
+Japan has the most number of anime shows available on Netflix. Also, you can access Japan's Netflix server by using a VPN. This way you can enjoy the anime series locked in your country.
+   </p>
+  </div>
+  
+  <div class="search-result">
+    <div class="search-provider">
+      <img src="pv.png">
+    </div>
+    <h3>Anime | Amazone Prime Video Official Site</h3>
+    <a href="https://www.netflix.com/browse/genre/7424" target="_blank">
+      <p>Explore anime on Prime Video</p>
+    </a>
+   <p>
+    Watch, buy, and rent Anime movies, TV shows, and more from Amazon Prime Video. Stream from your smart TV, Fire TV, game console, PC, Mac, mobile, tablet, ...
+    ‎Wotakoi: Love is Hard for Otaku · ‎Hitorijime My Hero · ‎Love and Lies
+   </p>
+  </div>
+
+
+   
+  <div class="search-result">
+    <div class="search-provider">
+      <img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADT0lEQVR4AbTVA6xdSwBA0ftZ27Zt227Db9u2bdu2bduqbdt4b/5K824zmVo7WcHlnHMGmZ1sH8rSieO5hjvyXMkxtKM0e7SCdONmfmQuq8gl5MlhJXP4hqtoxf7scvvSlRdZSNhJM7mb+ux0xbiEWYTd9Dcj2JcdqiyPsY6QyGUBo/icd/mI35jFWgKpuRy7I4MowRPkEiLr+IHzaU95ilGYIpSmEUfzDiu2MojhbLX9uYr1hMhkzqY8O1IRDmc0IfEntdhifZlPiPxMl2RiVmUgp3AeZzKMquxDto78RUhcyz5bGvU7hMhftCRbLW5kNMvJIZDLSv7jPEokFzWbEBlF9UzSAJYS8ixiGNk68zNhO9bzBKWiO3YzIbKWQ9Nn/yAh8ggHklET/iTsoByuiGZ8S9K7cE+8IirwLyHPgui5F+RZwk6aQD2UKcrHhMgn8aPqwmJCng8ogjI9WURIpUs1sZbDosdwHyEykops7Khk07k0Onxu3sqPv8mpPMkqQooLyXYDITKVasjmQsizkhHRrfuUkHiG4ihTmBcJKc4k223bGsAVyfNvhzLlGEWILGcQcUNYTogsoCvK5OclQuS/+BFcmmyXTVGmIhMJkSX0IK4wD7CCHBZzLflQpjIjCZGPKM7GTiOXwHxaoUyZdPmxgTNIK8oQTqE3Bch2KKsJkdvj3XAoKwgsoz/KFOAVQuInarAjVeM7QmQlw9hUPaYRyOF0sp1BTrr8eIsmbKtGvEFIfEsZNlUoOQeei3bB2owkkBrLNXSmIuWoSR+uZTQhsZLD2KxT2EBgMg2S99JnGFvEeEYyPTlTUg9SiM2qwX8EcrkiuUP3sIGwi3J4kfJstQvYQGACLchWgttYTthJS7iNMmyzCnxJyPM6pciWn0P5ibWE7VjGRwwlHztUD6YR2MB9FCcd6JE8x7/MYT7zmMY33M4AirPTHcY8Aut5ipqk5aMcDWlDc6pTgn3Y5fbl4GQb/pUjKMPOdCDN6MmB7FQdeIfVBNbwA1czgBqUpDAFKEhRytOaE3iIB+i0q3elOIfxAQuTDWU6P/Eer/EmX/IvI3mDIyjJbleEDpzDU3zDWGbkGcd3PM05tKcIe6V8lKIS1fh/8lC2MKnxDAA4Dd5NOoT0DAAAAABJRU5ErkJggg==" style="height:50px;width:50px" alt="" data-csiid="11" data-atf="1">
+    </div>
+    <a href="https://www.netflix.com/browse/genre/7424" target="_blank">
+      <h3>NARUTO OFFICIAL SITE (NARUTO & BORUTO)</h3>
+    </a>
+   <p>The official Naruto and Boruto site. Check out the latest news, special content ... When you visit any website, it may store or retrieve information on your .... 
+<br>
+Crunchyroll, Netflix, and Funimation are the three streaming apps that have all the episodes of Naruto and Naruto Shippuden.
+
+   </p>
+  </div>
+
+  
+  <div class="naruto">
+    <img src="nr1.png"> <h2><u><b>1.NARUTO</b></u></h2>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 1</h5>
+      <p class="card-text">The first season of the Naruto anime series is directed by Hayato Date, and produced by Pierrot and TV Tokyo.</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-1" class="btn btn-primary" style="align-items: center;">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 2</h5>
+      <p class="card-text">The second season from the anime series Naruto is directed by Hayato Date, and produced by Studio Pierrot and TV Tokyo.</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-2" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 3</h5>
+      <p class="card-text">Based on Masashi Kishimoto's manga series, the season follows Sasuke Uchiha leaving the Hidden Leaf Village</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-3" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 4</h5>
+      <p class="card-text">The  season of the Naruto anime series, titled "4th Stage" in Japan produced by Studio Pierrot and TV Tokyo.</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-4" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 5</h5>
+      <p class="card-text">The fifth and final season of the Naruto anime series, titled "5th Stage" in Japan, is directed by Hayato Date.</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-5" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="ns6.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Season 6</h5>
+      <p class="card-text">The sixth season aired from June 2009 to January 2010 on TV Tokyo. The season follows Sasuke Uchiha  taking revenge.</p>
+      <a href="https://www.justwatch.com/in/tv-show/naruto/season-6" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <!-- NARUTO SHIPPUDEN-->
+
+  <div class="naruto">
+    <img src="nr1.png"> <h2><u><b>NARUTO SHIPPUDEN</b></u></h2>
+  </div>
+
+
+  <div class="card" style="width: 14rem; height:20rem ; ">
+    <img src="nts1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 1</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-1" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nts2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 2</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-2" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nts3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 3</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-3" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nts4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 4</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-4" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 5</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-5" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst6.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 6</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-6" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst7.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 7</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-7" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst8.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 8</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-8" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst9.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 9</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-9" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem ;">
+    <img src="nst10.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 10</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-10" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst11.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 11</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-11" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst12.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 12</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-12" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst13.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 13</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-13" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst14.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 14</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-14" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst15.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 15</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-15" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst16.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 16</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-16" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst17.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 17</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-17" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 18</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-18" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst19.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 19</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-19" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst20.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 20</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-20" class="btn btn-primary">Watch Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 14rem; height:20rem">
+    <img src="nst21.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Naruto Shiippuden Season 21</h5>
+      <a href=" https://www.justwatch.com/in/tv-show/naruto-shippuden/season-21" class="btn btn-primary" >Watch Now</a>
+    </div>
+  </div>
+
+ 
+  
+
+
+
+  <footer>
+
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+      <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+      <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+     <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+    </ul>
+
+    <ul class="footer-links">
+      <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms and Conditions</a></li>
+      <li><a href="https://support.google.com/websearch/?visit_id=638398946355479971-3146221854&hl=en-IN&rd=2#topic=3378866">Help</a></li>
+    </ul>
+    <h6>Top 5 Amine Website</h6>
+    <h5>Naruto</h5>
+    <h4>One Piece</h4>
+    <h3>Demon Slayer</h3>
+    <h2>One Punch Man</h2>
+    <h1>Bleach</h1>
+    <p>&copy; 2023 <h3>Anime world</h3> </p>
+
+
+  </footer>
+
+  
+
+
+
+  <script>
+    // Array of page objects with name and URL
+    const pages = [
+    { name: 'NARUTO', url: 'index.html' },
+    { name: 'ONE PIECE', url: 'ONEPIECE.html' },
+    { name: 'DEMON SLAYER', url: 'Doman.html' },
+    { name: 'ONE PUNCH MAN', url: 'One.html' },
+    { name: 'BLEACH', url: 'Bleach.html' }
+  ];
+
+
+    // Get the navigation container
+    const navContainer = document.getElementById('dynamicNav');
+
+    // Dynamically create navigation items with clickable links
+    pages.forEach((page, index) => {
+      const li = document.createElement('li');
+      li.className = 'nav-item';
+
+      const link = document.createElement('a');
+      link.className = 'nav-link';
+      link.href = page.url;
+      link.textContent = page.name;
+
+      // Add a dynamic CSS property based on the index
+      if (index === 0) {
+        link.style.backgroundColor = 'yellow';
+      } else {
+        link.style.color = 'black';
+      }
+
+      li.appendChild(link);
+      navContainer.appendChild(li);
+    });
+  </script>
+</body>
+</html>
