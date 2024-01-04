@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Anime world</title>
+  <style>
+    ::-webkit-scrollbar{
+        width:15px ; 
+        height:60px; 
+    }
+    
+    ::-webkit-scrollbar-track
+    {
+      background:#d1e5ff ;
+    
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(#642bff,#ff22e6);
+        border-radius: 15px;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Anm3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-x: hidden; /* Add this line to remove horizontal scrollbar */
+    }
+
+    header {
+      background-color: black;
+      color: #fff;
+      padding: 5px 0px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      background-color:aqua;
+      margin-top: 0px;
+      padding: 5px;
+    }
+
+    .nav-item {
+      list-style-type: none;
+      margin: 0 auto; /* Add some margin between items */
+    }
+
+    .nav-link {
+      text-decoration: none;
+      padding: 10px 30px;
+      display: block;
+      text-align: center;
+      transition: background-color cubic-bezier(0.77, 0, 0.175, 1);
+      shape-margin: 10px;
+      border-radius: 5px;
+    }
+
+    .nav-link:hover {
+      background-color:yellow;
+      
+    }
+
+    /* NARUTO HEADING */
+    .naruto {
+      margin: -10px;
+      text-align: center;
+      padding: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        /* Styles for small screens */
+        .card {
+          width: 100%;
+        }
+      }
+      
+      @media only screen and (min-width: 601px) {
+        /* Styles for larger screens */
+        .card {
+          width: 50%;
+        }
+      }
+      
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50px;
+        margin-left:25%;
+      }
+      
+      .card-img-top{
+        width: 17rem;
+        height: 11rem;
+        object-fit: contain;
+      }
+      .btn{
+        text-align: center;
+        align-items:center ;
+        justify-content: center;
+      }
+      .card:hover {
+        background-color:black;
+        color:white;
+       
+      }
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      footer {
+        background-color: aqua;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+  
+      .social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .social-icons li {
+        margin: 0 10px;
+      }
+  
+      .fa {
+        width:50px;
+        height: 50px;
+      }
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .footer-links li {
+        display: inline;
+        margin: 0 10px;
+      }
+  
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-links a:hover{
+        color:blue;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANIME WORLD</h1>
+  </header>
+  <ul class="nav-container" id="dynamicNav">
+    <!-- Navigation items will be dynamically added here -->
+  </ul>
+  <div class="naruto">
+    <img src="nr1.png"> <h2><u><b>DENOM SLAYER</b></u></h2>
+  </div>
+  <!--  D LAYER -->
+
+
+  <div class="card text-center" style=" display :flex; align-items: center; justify-content:center ">
+    <div class="card-header">
+      <img src="dl1.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Demon Slayer Season 1</h5>
+      <p class="card-text">Demon Slayer: Kimetsu no Yaiba: With Natsuki Hanae, Zach Aguilar, Abby Trott, Akari Kitô. A family is attacked by demons and only two members survive .</p>
+      <a href="https://www.imdb.com/title/tt9335498/episodes/?season=1" class="btn btn-primary">Watch Now</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+     Total 26 Episode in seasone 1
+    </div>
+  </div>
+ 
+  <div class="card text-center" style=" display :flex; align-items: center; justify-content:center ">
+    <div class="card-header">
+      <img src="dl2.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Demon Slayer Season 2</h5>
+      <p class="card-text">Demon Slayer: Kimetsu no Yaiba: With Natsuki Hanae, Zach Aguilar, Abby Trott, Akari Kitô. A family is attacked by demons and only two members survive .</p>
+      <a href="https://www.imdb.com/title/tt9335498/episodes/?season=2" class="btn btn-primary">Watch Now</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+     Total 18 Episode in seasone 2
+    </div>
+  </div>
+ 
+
+  <div class="card text-center" style=" display :flex; align-items: center; justify-content:center ">
+    <div class="card-header">
+      <img src="dl3.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Demon Slayer Season 3</h5>
+      <p class="card-text">Demon Slayer: Kimetsu no Yaiba: With Natsuki Hanae, Zach Aguilar, Abby Trott, Akari Kitô. A family is attacked by demons and only two members survive .</p>
+      <a href="https://www.imdb.com/title/tt9335498/episodes/?season=3" class="btn btn-primary">Watch Now</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+     Total 11 Episode in seasone 3
+    </div>
+  </div>
+ 
+
+  <div class="card text-center" style=" display :flex; align-items: center; justify-content:center ">
+    <div class="card-header">
+      <img src="dl4.jpg" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Demon Slayer Season 4</h5>
+      <p class="card-text">Demon Slayer: Kimetsu no Yaiba: With Natsuki Hanae, Zach Aguilar, Abby Trott, Akari Kitô. A family is attacked by demons and only two members survive .</p>
+      <a href="https://www.imdb.com/title/tt9335498/episodes/?season=4" class="btn btn-primary">Watch Now</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+     Total 11 Episode in seasone 4
+    </div>
+  </div>
+ 
+  
+
+
+  <footer>
+
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+      <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+      <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+     <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+    </ul>
+
+    <ul class="footer-links">
+      <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms and Conditions</a></li>
+      <li><a href="https://support.google.com/websearch/?visit_id=638398946355479971-3146221854&hl=en-IN&rd=2#topic=3378866">Help</a></li>
+    </ul>
+    <h6>Top 5 Amine Website</h6>
+    <h5>Naruto</h5>
+    <h4>One Piece</h4>
+    <h3>Demon Slayer</h3>
+    <h2>One Punch Man</h2>
+    <h1>Bleach</h1>
+    <p>&copy; 2023 <h3>Anime world</h3> </p>
+
+
+  </footer>
+
+  
+
+
+
+
+  <script>
+    // Array of page objects with name and URL
+    const pages = [
+    { name: 'NARUTO', url: 'index.html' },
+    { name: 'ONE PIECE', url: 'ONEPIECE.html' },
+    { name: 'DEMON SLAYER', url: 'Doman.html' },
+    { name: 'ONE PUNCH MAN', url: 'One.html' },
+    { name: 'BLEACH', url: 'Bleach.html' }
+  ];
+
+    // Get the navigation container
+    const navContainer = document.getElementById('dynamicNav');
+
+    // Dynamically create navigation items with clickable links
+    pages.forEach((page, index) => {
+      const li = document.createElement('li');
+      li.className = 'nav-item';
+
+      const link = document.createElement('a');
+      link.className = 'nav-link';
+      link.href = page.url;
+      link.textContent = page.name;
+
+      // Add a dynamic CSS property based on the index
+      if (index === 2) {
+        link.style.backgroundColor = 'yellow';
+      } else {
+        link.style.color = 'black';
+      }
+
+      li.appendChild(link);
+      navContainer.appendChild(li);
+    });
+  </script>
+</body>
+</html>
